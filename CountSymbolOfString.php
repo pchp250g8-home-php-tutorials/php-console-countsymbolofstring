@@ -2,7 +2,7 @@
     echo("Input a string:\r\n");
     $strLine = chop(fgets(STDIN));
     echo("Input a symbol\r\n");
-    $chSym = chop(fgetc(STDIN));
+    fscanf(STDIN," %1s", $chSym);
     $nLen = strlen($strLine);
     $c = 0;
     for ($i = 0; $i < $nLen; $i++)
